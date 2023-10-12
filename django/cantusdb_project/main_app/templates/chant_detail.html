@@ -133,10 +133,13 @@
                         <div class="col">
                             <dt>Differentia&nbsp;Database</dt>
                             <dd>
+                                {% if chant.differentiae_database.melodic_transcription %}
+                                    <p style="font-family: volpiano; font-size:28px">{{ chant.differentiae_database.melodic_transcription }}</p>
+                                {% endif %}
                                 <a href="https://differentiaedatabase.ca/differentia/{{ chant.differentiae_database }}" target="_blank">
                                     {{ chant.differentiae_database }}
                                 </a>
-                            </dd>
+                            </dd>    
                         </div>
                     {% endif %}
 
